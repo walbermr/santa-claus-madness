@@ -12,8 +12,7 @@ boot2size=1
 # preencha esses valores para rodar o kernel
 kernel=kernel
 kernelpos=2
-kernelsize=40
-
+kernelsize=50
 
 ASMFLAGS=-f bin
 file = $(bootdisk)

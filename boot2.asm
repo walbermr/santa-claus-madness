@@ -29,8 +29,8 @@ print:
 ret
 
 start:
-;	xor ax, ax
-;	mov ds, ax
+	xor ax, ax
+	mov ds, ax
 	
 	mov si, msg1
 	call print
@@ -61,7 +61,7 @@ resetDisk:
 	
 readDisk:
 	mov ah, 02h ;Lê setores do HD
-	mov al, 15 ;Vai ler 15 setores
+	mov al, 50 ;Vai ler 15 setores
 	mov ch, 0 ;No cilindro 0
 	mov cl, 0x03 ;a partir do setor 3
 	mov dh, 0 ;Head 0
